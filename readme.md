@@ -147,4 +147,4 @@ dump($referralLists[0]->user->email);
 
 ## License
 
-Licensed under the [MIT license]().
+Licensed under the [MIT license](https://github.com/segeysomok/laravel-multi-referral/blob/master/LICENSE).
