@@ -23,7 +23,7 @@ trait MultiReferral
 
     public function getParentReferral()
     {
-        return $this->hasOne('App\User','id','ref_id');
+        return $this->hasOne(config('multi_referral.user_model', 'App\User'),'id','ref_id');
     }
 
     public function findAndSaveAllParents($user=false,$level = 1)

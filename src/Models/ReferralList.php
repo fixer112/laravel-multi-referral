@@ -12,6 +12,6 @@ class ReferralList extends Model
     ];
 
     public function user(){
-        return $this->hasOne('App\User','id','ref_id');
+        return $this->hasOne(config('multi_referral.user_model', 'App\User'),'id','ref_id');
     }
 }
