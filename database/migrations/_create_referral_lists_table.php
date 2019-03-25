@@ -16,8 +16,8 @@ class CreateReferralListsTable extends Migration
     {
         Schema::create('referral_lists', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger("user_id")->index();
-            $table->bigInteger("ref_id")->index();
+            $table->integer("user_id")->index();
+            $table->integer("ref_id")->index();
             $table->integer("level")->index();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
