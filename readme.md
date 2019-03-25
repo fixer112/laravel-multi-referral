@@ -104,7 +104,6 @@ protected function create(array $data)
 ```
 
 
-Add a login field to the validator
 
 
 ## Usage
